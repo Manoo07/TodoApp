@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const bodyparser = require('body-parser');
 const { createTodo,updateTodo } = require('./types');
-const { todo } = require('node:test');
+const { todo } = require('./db');
 app.use(express.json());
 const PORT = 3005;
 // inputs to be expected 
